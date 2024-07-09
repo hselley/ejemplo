@@ -33,4 +33,7 @@ def Jacobi(A, b, TOL=1e-2, Nmax=50): # 1e-2 = 1x10^(-2)
         x0 = np.copy(x)
     print(f'El método fracasó luego de {Nmax} iteraciones')
 
-    
+A = np.array([[3,-1,1], [3,6,2], [3,3,7]])
+b = np.array([1,0,4])
+
+Jacobi(A, b)
